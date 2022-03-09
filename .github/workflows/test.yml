@@ -19,11 +19,11 @@ jobs:
       - name: Check python
         run : |
           which python
-          python -v
+          python -V
       - name: Check pip
         run: |
           which pip
-          pip -v
+          pip -V
       # - name: Set up JDK 8
       #   run: |
       #     brew tap AdoptOpenJDK/openjdk
