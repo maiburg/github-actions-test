@@ -6,28 +6,16 @@ jobs:
   run-shell-command:
     runs-on: macos-latest
     steps:
-      # - name: Install xcodeproj ruby gem
-      #   run: sudo gem install xcodeproj
+      - name: Install xcodeproj ruby gem
+        run: sudo gem install xcodeproj
       # - name: Install CocoaPods
       #   run: sudo gem install cocoapods
       # - name: Setup CocoaPods
       #   run: pod setup
       # - name: Install pip
       #   run: sudo easy_install pip
-      # - name: Install python six package
-      #   run: python3.9 -m pip install six
-      - name: Check python
-        run : |
-          which python
-          rm -f /usr/local/bin/python
-          ln -s ../../../Library/Frameworks/Python.framework/Versions/3.9/bin/python /usr/local/bin/python
-          exec bash
-          python -V
-          ls -lisa /usr/local/bin/python
-      - name: Check pip
-        run: |
-          which pip
-          pip -V
+      - name: Install python six package
+        run: pip install six
       # - name: Set up JDK 8
       #   run: |
       #     brew tap AdoptOpenJDK/openjdk
@@ -38,12 +26,12 @@ jobs:
       #   run: export ANDROID_HOME=/usr/local/share/android-sdk
       # - name: Install all packages for the Android SDK Platform 28, Android SDK Build-Tools 28.0.3 or later, Android Support Repository, Google Repository etc.
       #   run: $ANDROID_HOME/tools/bin/sdkmanager "tools" "emulator" "platform-tools" "platforms;android-28" "build-tools;28.0.3" "extras;android;m2repository" "extras;google;m2repository"
-      # - name: Finally install NativeScript
-      #   run: npm i -g nativescript
-      # - name: Restart bash
-      #   run: exec bash
-      # - name: Check if NativeScript is configured properly
-      #   run: tns doctor
+      - name: Finally install NativeScript
+        run: npm i -g nativescript
+      - name: Restart bash
+        run: exec bash
+      - name: Check if NativeScript is configured properly
+        run: tns doctor
       # - name: checkout repo
       #   uses: actions/checkout@v3
       # - name: npm install
