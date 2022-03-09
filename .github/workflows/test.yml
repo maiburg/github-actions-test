@@ -6,6 +6,5 @@ jobs:
   run-shell-command:
     runs-on: macos-latest
     steps:
-      - name: brew install
-        run: |
-          brew install github
+      - name: npm install
+        run: npm install
