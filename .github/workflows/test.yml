@@ -6,6 +6,6 @@ jobs:
   run-shell-command:
     runs-on: macos-latest
     steps:
-      - name: Install brew
+      - name: brew install
         run: |
-          which brew
+          brew install github
