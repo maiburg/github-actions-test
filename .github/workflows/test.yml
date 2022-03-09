@@ -6,8 +6,8 @@ jobs:
   run-shell-command:
     runs-on: macos-latest
     steps:
-      - name: Install xcodeproj ruby gem
-        run: sudo gem install xcodeproj
+      # - name: Install xcodeproj ruby gem
+      #   run: sudo gem install xcodeproj
       # - name: Install CocoaPods
       #   run: sudo gem install cocoapods
       # - name: Setup CocoaPods
