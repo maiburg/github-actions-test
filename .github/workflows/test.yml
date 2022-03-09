@@ -4,11 +4,11 @@ on: [push]
 
 jobs:
   run-shell-command:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
-      - name: echo a string
-        run: echo "Hello World!"
-      - name: multiline script
+      - name: Install brew
         run: |
-          node -v
-          npm -v
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+          brew update
+          brew doctor
+          brew install github
