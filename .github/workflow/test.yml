@@ -1,6 +1,6 @@
 name: Shell Comands
 
-on: [push]
+on: [push, commit]
 
 jobs:
   run-shell-command:
