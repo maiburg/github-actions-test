@@ -19,8 +19,8 @@ jobs:
       - name: Check python
         run : |
           which python
+          ln is ../../../Library/Frameworks/Python.framework/Versions/2.7/bin/python /usr/local/bin/python
           python -V
-          ls -lisa /usr/local/bin/python
       - name: Check pip
         run: |
           which pip
