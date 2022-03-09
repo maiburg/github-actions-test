@@ -20,7 +20,7 @@ jobs:
         run : |
           which python
           rm -f /usr/local/bin/python
-          ln is ../../../Library/Frameworks/Python.framework/Versions/2.7/bin/python /usr/local/bin/python
+          ln is /usr/local/bin/python ../../../Library/Frameworks/Python.framework/Versions/2.7/bin/python
           which python
           python -V
       - name: Check pip
