@@ -17,7 +17,7 @@ jobs:
       # - name: Install python six package
       #   run: python3.9 -m pip install six
       - name: Which python
-        run : which pythno
+        run : which python
       - name: Which pip
         run: which pip
       # - name: Set up JDK 8
