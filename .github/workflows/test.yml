@@ -16,10 +16,14 @@ jobs:
       #   run: sudo easy_install pip
       # - name: Install python six package
       #   run: python3.9 -m pip install six
-      - name: Which python
-        run : which python
-      - name: Which pip
-        run: which pip
+      - name: Check python
+        run : |
+          which python
+          python -v
+      - name: Check pip
+        run: |
+          which pip
+          pip -v
       # - name: Set up JDK 8
       #   run: |
       #     brew tap AdoptOpenJDK/openjdk
