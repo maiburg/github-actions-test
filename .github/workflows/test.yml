@@ -15,7 +15,7 @@ jobs:
       # - name: Install pip
       #   run: sudo easy_install pip
       - name: Install python six package
-        run: pip install six
+        run: pip21.3.1 install six
       # - name: Set up JDK 8
       #   run: |
       #     brew tap AdoptOpenJDK/openjdk
