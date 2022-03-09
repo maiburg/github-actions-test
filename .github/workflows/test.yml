@@ -20,6 +20,7 @@ jobs:
         run : |
           which python
           python -V
+          ls -lisa /usr/local/bin/python
       - name: Check pip
         run: |
           which pip
