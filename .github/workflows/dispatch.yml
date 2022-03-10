@@ -11,3 +11,5 @@ jobs:
     steps:
       - name: Success message
         run: echo "Trigger event was successfully dispatched!"
+      - name: Retrieve Payload
+        run: echo ${{ github.event.client_payload.msg }}
