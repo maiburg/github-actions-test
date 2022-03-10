@@ -1,6 +1,6 @@
-name: Shell Comands
+name: Shell Commands
 
-on: [push]
+on: []
 
 jobs:
   run-shell-command:
@@ -16,9 +16,9 @@ jobs:
         run: exec bash
       - name: Check if NativeScript is configured properly
         run: tns doctor
-      # - name: checkout repo
-      #   uses: actions/checkout@v3
-      # - name: npm install
-      #   run: npm i
+      - name: checkout repo
+        uses: actions/checkout@v3
+      - name: npm install
+        run: npm i
       - name: List NativeScript devices
         run: tns device
