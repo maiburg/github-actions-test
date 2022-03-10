@@ -1,0 +1,13 @@
+name: Dispatch trigger event
+
+on:
+  repository_dispatch:
+    types:
+      - trigger
+
+jobs:
+  job_01:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Success message
+        run: echo "Trigger event was successfully dispatched!"
